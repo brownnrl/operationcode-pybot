@@ -1,5 +1,20 @@
 from typing import List
 
+def identify_military_spouse(user_id: str) -> str:
+    return (
+        f"Hi <@{user_id}> !\n\n",
+        "As a military spouse, we recommend joining #milspouses,",
+        "a shared community with MilSpouse Coders (https://www.milspousecoders.org)",
+        "You can share with other spouses of military service members finding",
+        "fulfilling careers in technology."
+    )
+
+def identify_military_ad(user_id: str) -> str:
+    return (
+        f"Hi <@{user_id}> !\n\n",
+        "As a currently serving active duty member, consider joining #active-duty where",
+        "other active duty folks congregate and meet each other."
+    )
 
 def team_join_initial_message(user_id: str) -> str:
     return (
